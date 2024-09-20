@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gradient Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <!-- <link rel="stylesheet" href="style.css"> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<style>
+    /* Additional custom styles for the login page */
+body {
+    background: linear-gradient(135deg, #00b4db, #8e44ad);
+}
+</style>
+<body class="flex justify-center items-center min-h-screen">
+
+    <div class="w-full max-w-sm bg-white shadow-lg rounded-lg p-8">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Signup</h2>
+
+            <div class="mb-4">
+                <label for="username" class="block text-gray-700 text-sm mb-1">Username</label>
+                <div class="flex items-center border-b border-gray-300 py-2">
+                    <span class="text-gray-500 pr-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11h14M5 7h14M5 15h14M5 19h14" />
+                        </svg>
+                    </span>
+                    <input id="username" type="text" placeholder="Type your username"
+                           class="w-full px-2 py-2 focus:outline-none text-gray-700">
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm mb-1">email</label>
+                <div class="flex items-center border-b border-gray-300 py-2">
+                    <span class="text-gray-500 pr-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11h14M5 7h14M5 15h14M5 19h14" />
+                        </svg>
+                    </span>
+                    <input id="email" type="text" placeholder="Type your email"
+                           class="w-full px-2 py-2 focus:outline-none text-gray-700">
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 text-sm mb-1">Password</label>
+                <div class="flex items-center border-b border-gray-300 py-2">
+                    <span class="text-gray-500 pr-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 1.104-.9 2-2 2s-2-.9-2-2 2-2 2-2h.01c.011.002.02.003.03.003C10 9.003 11 9.896 11 11h1z" />
+                        </svg>
+                    </span>
+                    <input id="password" type="password" placeholder="Type your password"
+                           class="w-full px-2 py-2 focus:outline-none text-gray-700">
+                </div>
+                <div class="text-right text-sm">
+                    <a href="#" class="text-blue-500 hover:underline mt-2 inline-block">Forgot password?</a>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <button onclick="save()"
+                        class="w-full bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold py-2 rounded-md hover:opacity-90 focus:outline-none">
+                    SIGNUP
+                </button>
+            </div>
+
+            <div class="text-center mb-4">
+                <span class="text-gray-600 text-sm">Or Sign Up using</span>
+                <div class="flex justify-center space-x-4 mt-2">
+                    <a href="#" class="text-blue-600">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-blue-400">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-red-500">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <span class="text-gray-600 text-sm">Have not an account yet?</span>
+                <a href="../login/login.html" class="text-blue-500 hover:underline">Login</a>
+            </div>
+    </div>
+
+</body>
+<script type="module" src="signup.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<style>
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    background: f1fbff;
+  }
+
+  .section-padding {
+    padding: 100px 0;
+  }
+
+  .carousel-item {
+    height: 100vh;
+    min-height: 300px;
+  }
+
+  .carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+  }
+
+  .carousel-caption h5 {
+    font-size: 45px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-top: 25px;
+  }
+
+  .carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+  }
+
+  .carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+
+  }
+
+  .navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+  }
+
+  .navbar-light .navbar-brand {
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  .navbar-light .navbar-brand:focus,
+  .navbar-light .navbar-brand:hover {
+    color: #000;
+  }
+
+  .navbar-light .navbar-nav .navbar-link {
+    color: #000;
+  }
+
+  .w-100 {
+    height: 100vh;
+  }
+
+  .about-text {
+    color: "aqua";
+    text-transform: capitalize;
+  }
+
+  .heading {
+    text-decoration: underline
+  }
+
+
+
+
+  @media only screen and (min-width:768px) and (max-width:991px) {
+    .carousel-caption {
+      bottom: 370px;
+    }
+
+    .carousel-caption p {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .navbar-nav {
+      text-align: center;
+    }
+
+    .carousel-caption {
+      bottom: 125px;
+    }
+
+    .carousel-caption h5 {
+      font-size: 17px;
+
+    }
+
+    .carousel-caption a {
+      padding: 10px 15px;
+    }
+
+    .carousel-caption p {
+      width: 100%;
+      line-height: 1.6;
+      font-size: 12px;
+    }
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="#"><span class="text-warning">Student</span>Con</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"></li>
+          <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/project/signup/signup.html">Signup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/project/login/login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/project/admin/admin.html">Admin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/project/student portal/editProfile/editProfile.html">EditProfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/project/student portal/stdReg/stdReg.html">StdReg</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://t3.ftcdn.net/jpg/06/53/43/38/240_F_653433862_JpxBRZ5gUxLsgfpc0H0sWawOjtKwrMfW.jpg"
+          class="d-block w-100" alt="">
+        <div class="carousel-caption">
+          <h5>First slide label</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quisquam corrupti enim eum accusamus?
+            Esse.</p>
+          <p><a href="#" class="btn btn-warning mt3">Learn more</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://t3.ftcdn.net/jpg/06/68/96/80/240_F_668968058_4pLrOw9lSc4VPgX3XkzNFHM12O6JsJRi.jpg"
+          class="d-block w-100" alt="">
+        <div class="carousel-caption">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quisquam corrupti enim eum accusamus?
+            Esse.</p>
+          <p><a href="#" class="btn btn-warning mt3">Learn more</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://as1.ftcdn.net/v2/jpg/07/14/41/92/1000_F_714419255_bASQlssZpv8ik7ZFqJFz7NFTPuxvGgFo.jpg"
+          class="d-block w-100" alt="">
+        <div class="carousel-caption">
+          <h5>Third slide label</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quisquam corrupti enim eum accusamus?
+            Esse.</p>
+          <p><a href="#" class="btn btn-warning mt3">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- about section-->
+  <section id="about" class="about-section-pading">
+    <div class="container">
+
+    </div>
+    <br>
+
+  </section>
+  <section id="about" class="about-section-pading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-12">
+          <div class="about-img">
+            <img
+              src="https://media.istockphoto.com/id/1041465228/photo/professional-engineer-architect-worker-with-protective-helmet-and-blueprints-paper-at-house.jpg?s=612x612&w=0&k=20&c=e84Qt0pHjgcj8Ncj62G_2U4wAECjwIKRfb05obFQwN0="
+              alt="" class="img-fluid">
+            <p class=" bg-body-tertiary m-3 ps-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+              ea beatae culpa, id ratione earum consectetur illo sequi minus consequatur, sint illum, unde maiores natus
+              commodi quod accusantium! Explicabo, perspiciatis!</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-12">
+          <div class="about-img">
+            <img src="https://t4.ftcdn.net/jpg/00/68/63/23/360_F_68632352_kmHLwFc2rQLmnKqn6gM0bhOPqxRTx8sY.jpg" alt=""
+              class="img-fluid">
+            <p class=" bg-body-tertiary m-3 ps-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              sunt nemo aut. Inventore earum eveniet suscipit ipsa neque cum cumque voluptatum dignissimos dicta
+              veritatis ipsam, praesentium illum provident? Sint, provident!</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-12">
+          <div class="about-img">
+            <img src="https://img.freepik.com/premium-photo/architecture-construction-ai-generated_406939-9250.jpg"
+              alt="" class="img-fluid">
+            <p class=" bg-body-tertiary m-3 ps-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+              tempora in tempore adipisci facere molestiae maxime sed officia unde ipsam alias sapiente cumque non sint
+              amet quibusdam odit, voluptatibus ratione?</p>
+          </div>
+        </div>
+
+        <div class="col-12 ps-lg-5 mt-md-5 text-center">
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <div class="text-center bg-black text-light">
+    <!-- <div class="card-footer">
+      <span class="text-primary"><strong>Knowledge is the key of success</strong>
+        <br></span>Happy Student
+    </div> -->
+    <br>
+    <br>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+      <a class=" text-success" href="https://wa.link/1q92c4"><i class="fa-brands fa-whatsapp"></i></a>
+      <a class="" href="https://www.facebook.com/atharali.ansari.505?mibextid=ZbWKwL"><i
+          class="fa-brands fa-facebook"></i></a>
+      <a class=" text-danger" href="https://wa.link/1q92c4"><i class="fa-brands fa-youtube"></i></a>
+      <a class="" href="https://www.facebook.com/atharali.ansari.505?mibextid=ZbWKwL"><i
+          class="fa-brands fa-twitter"></i></a>
+      <a class=" text-danger" href="https://www.facebook.com/atharali.ansari.505?mibextid=ZbWKwL"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a href="https://play.google.com/store/apps/details?id=com.easypropertydealer.android"><img
+          src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="60px"
+          alt=""></a>
+    </div>
+
+
+
+    <div class="card-footer text-light">
+      <p>Thanks For Visiting Website</p>
+
+
+    </div>
+    <p class="dev text-body-secondary "> {Developed By <br>
+      Athar Ali Ansari }
+    </p>
+
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>
